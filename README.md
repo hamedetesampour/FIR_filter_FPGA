@@ -1,4 +1,4 @@
-# FIR_filter_FPGA_VHDL
+# FIR_filter_FPGA_VHD
 ## Finite Impulse Response filter design using Xilinx ISE (VHDL programming for FPGA implementation) 
 This project aims to design a Finite Impulse Response (FIR) module that can be implemented by Field-programmable gate arrays. These filters are widely used in variety of communication and digital processing applications. 
 ## The Theoretical Background & Structure
