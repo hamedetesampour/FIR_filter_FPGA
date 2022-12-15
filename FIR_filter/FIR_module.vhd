@@ -52,6 +52,8 @@ component shiftReg8
 		   out_reg	: out std_logic_vector(input_bits-1 downto 0));
 end component;
 
+
+
 --declaring system coefficients for the desired filter
 --coefficients of SINC function in order of 11(function used for the filter)
 
@@ -68,6 +70,8 @@ constant coeffs: coeff_type :=	(X"F1",
 											 X"F3",
 											 X"F1");
 
+
+
 --the filter multiply coeffs to previous inputs and adds them together:
 --so we need a shift register because to implement delay and working with previous data
 --and we need a mulplier register
@@ -81,6 +85,8 @@ signal multp_reg : multp_reg_type;
 
 type add_reg_type is array (0 to order-1) of std_logic_vector (input_bits + coeff_bits -1 downto 0);
 signal add_reg : add_reg_type;
+
+
 
 --main architecture function
 
@@ -102,18 +108,15 @@ function_fir: for i in 0 to order-2 generate
 					 reset => reset,
 					 in_reg => shift_reg(i),
 					 out_reg => shift_reg(i+1));
-					 
---equation of multiplection function register:
 	
+--equation of multiplection function register:	
 multp_reg(i+1) <= shift_reg (i+1) * coeffs(i+2);
 
---equation of add functino register:
-
+--equation of add functino register
 add_reg(i+1) <= add_reg(i)+ multp_reg(i+1);
 end generate function_fir;
 
 --send data to ouput
-
 out_data <= add_reg(order-1);
 
 end Behavioral;
