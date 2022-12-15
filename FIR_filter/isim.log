@@ -1,0 +1,76 @@
+ISim log file
+Running: C:\Users\Hamed Etsm\Desktop\backup_fpga_2\FPGA_Project\FIR_filter\FIR_testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_testbench_isim_beh.wdb 
+ISim P.20131013 (signature 0x8ef4fb42)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /fir_testbench/uut/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+Finished circuit initialization process.
+# show driver /fir_testbench/out_data
+Driver for /fir_testbench/out_data[0]
+	'0'	: /fir_testbench/uut/:111
+		  in File "C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_module.vhd" Line 111
+
+Driver for /fir_testbench/out_data[10]
+	'0'	: /fir_testbench/uut/:111
+		  in File "C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_module.vhd" Line 111
+
+Driver for /fir_testbench/out_data[11]
+	'1'	: /fir_testbench/uut/:111
+		  in File "C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_module.vhd" Line 111
+
+Driver for /fir_testbench/out_data[12]
+	'0'	: /fir_testbench/uut/:111
+		  in File "C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_module.vhd" Line 111
+
+Driver for /fir_testbench/out_data[13]
+	'0'	: /fir_testbench/uut/:111
+		  in File "C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_module.vhd" Line 111
+
+Driver for /fir_testbench/out_data[14]
+	'0'	: /fir_testbench/uut/:111
+		  in File "C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_module.vhd" Line 111
+
+Driver for /fir_testbench/out_data[15]
+	'0'	: /fir_testbench/uut/:111
+		  in File "C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_module.vhd" Line 111
+
+Driver for /fir_testbench/out_data[1]
+	'0'	: /fir_testbench/uut/:111
+		  in File "C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_module.vhd" Line 111
+
+Driver for /fir_testbench/out_data[2]
+	'0'	: /fir_testbench/uut/:111
+		  in File "C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_module.vhd" Line 111
+
+Driver for /fir_testbench/out_data[3]
+	'1'	: /fir_testbench/uut/:111
+		  in File "C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_module.vhd" Line 111
+
+Driver for /fir_testbench/out_data[4]
+	'0'	: /fir_testbench/uut/:111
+		  in File "C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_module.vhd" Line 111
+
+Driver for /fir_testbench/out_data[5]
+	'0'	: /fir_testbench/uut/:111
+		  in File "C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_module.vhd" Line 111
+
+Driver for /fir_testbench/out_data[6]
+	'0'	: /fir_testbench/uut/:111
+		  in File "C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_module.vhd" Line 111
+
+Driver for /fir_testbench/out_data[7]
+	'1'	: /fir_testbench/uut/:111
+		  in File "C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_module.vhd" Line 111
+
+Driver for /fir_testbench/out_data[8]
+	'1'	: /fir_testbench/uut/:111
+		  in File "C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_module.vhd" Line 111
+
+Driver for /fir_testbench/out_data[9]
+	'0'	: /fir_testbench/uut/:111
+		  in File "C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_module.vhd" Line 111
+

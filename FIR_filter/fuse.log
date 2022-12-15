@@ -1,0 +1,26 @@
+Running: E:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_testbench_isim_beh.exe -prj C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_testbench_beh.prj work.FIR_testbench 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/register_8bit.vhd" into library work
+Parsing VHDL file "C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_module.vhd" into library work
+Parsing VHDL file "C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_testbench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 167744 KB
+Fuse CPU Usage: 202 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_signed
+Compiling architecture behavioral of entity shiftReg8 [\shiftReg8(8)\]
+Compiling architecture behavioral of entity FIR_module [\FIR_module(8,16,8,11)\]
+Compiling architecture behavior of entity fir_testbench
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 10 VHDL Units
+Built simulation executable C:/Users/Hamed Etsm/Desktop/backup_fpga_2/FPGA_Project/FIR_filter/FIR_testbench_isim_beh.exe
+Fuse Memory Usage: 189540 KB
+Fuse CPU Usage: 374 ms

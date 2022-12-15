@@ -1,0 +1,3 @@
+vhdl isim_temp "register_8bit.vhd"
+vhdl isim_temp "FIR_module.vhd"
+vhdl isim_temp "FIR_testbench.vhd"

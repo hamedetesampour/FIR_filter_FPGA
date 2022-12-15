@@ -1,0 +1,28 @@
+Command line:
+   FIR_testbench_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63229
+
+Sat Jun 25 12:58:38 2022
+
+
+ Elaboration Time: 0.34375 sec
+
+ Current Memory Usage: 1358.58 Meg
+
+ Total Signals          : 51
+ Total Nets             : 466
+ Total Signal Drivers   : 36
+ Total Blocks           : 26
+ Total Primitive Blocks : 14
+ Total Processes        : 36
+ Total Traceable Variables  : 41
+ Total Scalar Nets and Variables : 1080
+
+ Total Simulation Time: 0.40625 sec
+
+ Current Memory Usage: 413.397 Meg
+
+Sat Jun 25 13:50:29 2022
+
