@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Hamed Etesampour
 -- 
 -- Create Date:    20:50:39 06/09/2022 
 -- Design Name: 
@@ -23,7 +23,7 @@ use IEEE.STD_LOGIC_SIGNED.ALL;
 
 entity FIR_module is
 
---constant value of filter
+--constant values of the filter
 
 generic (input_bits	: integer := 8;
 			output_bits	: integer := 16;
@@ -42,7 +42,8 @@ end FIR_module;
 
 architecture Behavioral of FIR_module is
 
---store input data using 8-bit register
+--storing input data using 8-bit register
+	
 component shiftReg8
 	generic(input_bits : integer :=8 );
 	port( in_reg		: in std_logic_vector (input_bits-1 downto 0);
@@ -51,8 +52,9 @@ component shiftReg8
 		   out_reg	: out std_logic_vector(input_bits-1 downto 0));
 end component;
 
---declaring system variables for desired filter
+--declaring system coefficients for the desired filter
 --coefficients of SINC function in order of 11(function used for the filter)
+
 type coeff_type is array (1 to order) of std_logic_vector(coeff_bits-1 downto 0);
 constant coeffs: coeff_type :=	(X"F1",
 											 X"F3",
@@ -66,10 +68,10 @@ constant coeffs: coeff_type :=	(X"F1",
 											 X"F3",
 											 X"F1");
 
---for filter multiply coeffs to previous inputs and adds them together:
---so we need a shift register because of previose datas
+--the filter multiply coeffs to previous inputs and adds them together:
+--so we need a shift register because to implement delay and working with previous data
 --and we need a mulplier register
---and we neea a addign register
+--and a addign register (we are using registers to store data in memory, instead of using gate arrays hardware)
 
 type shift_reg_type is array (0 to order-1) of std_logic_vector (input_bits-1 downto 0);
 signal shift_reg : shift_reg_type;
@@ -85,6 +87,7 @@ signal add_reg : add_reg_type;
 begin
 
 --initial values of above registers:
+	
 shift_reg(0) <= in_data;
 multp_reg(0) <= in_data * coeffs(1);
 add_reg(0) <= in_data * coeffs(1);
@@ -101,13 +104,16 @@ function_fir: for i in 0 to order-2 generate
 					 out_reg => shift_reg(i+1));
 					 
 --equation of multiplection function register:
+	
 multp_reg(i+1) <= shift_reg (i+1) * coeffs(i+2);
 
 --equation of add functino register:
+
 add_reg(i+1) <= add_reg(i)+ multp_reg(i+1);
 end generate function_fir;
 
 --send data to ouput
+
 out_data <= add_reg(order-1);
 
 end Behavioral;
