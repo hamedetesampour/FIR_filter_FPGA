@@ -71,7 +71,7 @@ stem(y);
   
 <p align="center">
 <img src="https://user-images.githubusercontent.com/108813301/207814169-109d94c9-fb72-4b47-98d3-484ad758c433.JPEG" width="643" height="336" />
-</p>  
+</p>  <br />
 
--------------------------------------------------------------------------------------------------- <br />  
+***
 *at last you can find the raw vhd codes of the modules and testbench in the main directory, and also the whole project file in FIR_filter folder is available for you to run the project in Xilinx ISE Design*
