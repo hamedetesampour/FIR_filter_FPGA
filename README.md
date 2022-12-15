@@ -74,4 +74,4 @@ stem(y);
 </p>  <br />
 
 ***
-*at last you can find the raw vhd codes of the modules and testbench in the main directory, and also the whole project file in FIR_filter folder is available for you to run the project in Xilinx ISE Design*
+*at last you can find the raw vhd codes of the modules and testbench in the main directory, and also the whole project file in FIR_filter folder is available for you to run and use the project in Xilinx ISE Design*
